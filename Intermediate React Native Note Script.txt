@@ -1,0 +1,121 @@
+**************************************************
+Intermediate React Native Note Script
+**************************************************
+//--------------------------------------------------------------
+# วันที่ 1
+//--------------------------------------------------------------
+ตรวจสอบความพร้อมของเครื่องมือ
+
+VS Code
+---
+$ code -v
+
+Node JS
+---
+$ node -v
+$ npm -v
+$ npx -v
+
+Git
+---
+$ git  version
+
+Java JDK
+---
+$ java -version
+$ set JAVA_HOME
+
+Android SDK
+---
+$ android list target  (Windows)
+$ avdmanager list target (MacOS)
+
+MySQL
+---
+$ mysql -u root -p
+$ mysql -P 3333 -u root -p
+
+ADB Devices
+---
+$ adb devices
+
+ตรวจสอบเวอร์ชั่น React Native CLI
+---
+$ react-native -v
+
+ถอน React Native CLI เวอร์ชั่นปัจจุบันออก
+---
+$ npm uninstall -g react-native-cli
+
+ติดตั้ง React Native CLI
+---
+$ npm install -g react-native-cli
+
+บน MacOS
+---
+$ sudo npm install -g react-native-cli
+
+----------------------------------------------------------------
+การสร้าง App ด้วย React Native CLI
+----------------------------------------------------------------
+Step 1: คำสั่งขึ้นโปรเจ็กต์ใหม่
+---
+$ react-native init helloRNApp หรือ
+$ npx react-native init helloRNApp
+
+Step 2: เปิดเข้า VS Code
+---
+$ code helloRNApp -r
+
+Step 3: Start Metro
+---
+$ npm start หรือ
+$ npx react-native start
+
+Step 4: Run Application
+---
+Android
+---
+$ npm run android หรือ 
+$ npx react-native run-android
+
+iOS
+---
+$ npm run ios หรือ
+$ npx react-native run-ios
+
+Note:: การ Config Eslint (.eslintrc.js)
+---
+module.exports = {
+  root: true,
+  semi: [2, "never"],
+  extends: '@react-native-community',
+}
+
+Note:: การ Config Prettier (.prettierrc.js)
+---
+module.exports = {
+  bracketSpacing: true,
+  jsxBracketSameLine: true,
+  singleQuote: true,
+  trailingComma: 'all',
+  arrowParens: 'avoid',
+  tabWidth: 2,
+  semi: false,
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
